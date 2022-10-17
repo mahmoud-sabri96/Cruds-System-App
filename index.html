@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CRUDS SYSTEM</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Start Heading  -->
+        <div class="head">
+            <h2>CRUDS SYSTEM</h2>
+            <p>CREATE READ UPDATE SEARCH</p>
+        </div>
+        <!-- =======>>> Start Input Field <<<===== -->
+        <div class="input">
+            <input type="text" id="title" placeholder="title">
+            <div class="price">
+                <input type="number" id="price" placeholder="price">
+                <input type="number" id="taxes" placeholder="taxes">
+                <input type="number" id="ads" placeholder="ads">
+                <input type="number" id="discount" placeholder="discount">
+                <small id="total">00 <span>EGP</span></small>
+            </div>
+            <input type="number" id="count" placeholder="count">
+            <input type="text" id="category" placeholder="category">
+            <button id="submit">Create</button>
+        </div>
+        <!-- =======>>> Start Output Field <<<===== -->
+        <div class="output">
+            <div class="searchBlock">
+                <input type="search" id="search" placeholder="search">
+                <div class="btnsearch">
+                    <button id="searchTitle"><i class="fa-solid fa-magnifying-glass"></i> By Title</button>
+                    <button id="searchCategory"><i class="fa-solid fa-magnifying-glass"></i> By Category</button>
+                </div>
+                <button class="deleteall"></button>
+            </div>
+            <table>
+                <tr>
+                    <th>iD</th>
+                    <th>title</th>
+                    <th class="price">price</th>
+                    <th class="taxes">taxes</th>
+                    <th class="ads">ads</th>
+                    <th class="discount">discount</th>
+                    <th>Total price</th>
+                    <th>category</th>
+                    <th>Update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="tbody">
+                    <!-- tag created By Js here -->
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+    <script src="fontawesome/all.min.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

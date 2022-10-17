@@ -1,0 +1,133 @@
+/* ============================ General Styles ====================*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: system-ui;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+}
+
+/* ============================ Start Input & Output Field ====================*/
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    margin: 4px 0px;
+    border-radius: 4px;
+    padding: 4px;
+    transition: all .3s;
+    color: #fff;
+}
+
+input:focus {
+    background-color: #000;
+    transform: scale(1.05);
+}
+
+
+
+.price>input {
+    width: 19%;
+}
+
+#total {
+    background-color: #a00d02;
+    padding: 4px 2px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+#total::before {
+    content: "Total: ";
+}
+
+button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #390053;
+    color: #fff;
+    border-radius: 20px;
+    transition: .4s;
+}
+
+button:hover {
+    background-color: #710484;
+    letter-spacing: 1px;
+}
+
+.btnsearch {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnsearch>button {
+    width: 45%;
+}
+
+button.deleteall {
+    margin-top: 10px;
+    display: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+}
+
+th,
+td {
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+
+
+
+/* Start Media Queries */
+@media (max-width:768px) {
+
+    th {
+        font-size: 12px;
+    }
+
+    td {
+        padding: 3px;
+        font-size: 14px;
+    }
+
+    th.taxes,
+    th.ads,
+    th.discount,
+    th.price {
+        display: none;
+    }
+
+    td.taxes,
+    td.ads,
+    td.discount,
+    td.price {
+        display: none;
+    }
+}
